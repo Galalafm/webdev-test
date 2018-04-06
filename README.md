@@ -22,12 +22,9 @@ The goal of this test is to make you code a new page on our website for the mark
 
 ## Design
 
-You're lucky, the marketing team did a nice draft in order to help you! 😋
-
-![image](https://user-images.githubusercontent.com/19815229/37107703-5e12eaea-2235-11e8-8a67-e748e5e6690d.png)
 
 For the design you have some assets in `sources/images`folder.
-You have to keep in mind that your design need to fit with the rest of our [website](https://aircall.io) but don't hesitate to create elements, layouts icons etc. THe marketing brief is the fundation your role is to bring creativity.
+You have to keep in mind that your design need to match with the rest of our [website](https://aircall.io).
 
 
 
