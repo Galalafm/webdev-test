@@ -5,12 +5,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <meta name="description"
+          content="Aircall’s cloud based phone system for eCommerce businesses is easy and quick to set up. It allows customer service teams to deliver omnichannel support">
+    <title><%= current_page.data.title || "eCommerce Support Solution" %></title>
     <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <%= partial "partials/header" %>
     <%= yield %>
   </body>
 </html>

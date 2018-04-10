@@ -1,9 +1,109 @@
----
-title: aircall webdev test
----
+<!-- Content top -->
+<section class="content-top">
+  <!-- Breadcrum -->
+  <div class="breadcrum">
+    <div class="tree">
+        <p>Aircall</p>
+        <span class="arrow"></span>
+        <p>Solutions</p>
+        <span class="arrow"></span>
+        <p class="current">eCommerce</p>
+      </div>
+      <div class="help">
+        <p>Need help ?</p>
+      </div>
+  </div>
+  <!-- Headline -->
+  <div class="headline">
+    <h1>The phone system for effortless eCommerce</h1>
+    <h2>Turn curious shoppers into lifelong customers with </br> a five-star service experience</h2>
+    <div class="img">
+      <%= svg'illustrations/ecommerce_illu' %>
+    </div>
+  </div>
+  <!-- CTA -->
+  <div class="cta">
+    <a class="button" href="#">Try aircall for free</a>
+    <div class="infos">
+      <span>Mise en place en 3 min</span>
+      <b><span>|</span></b>
+      <span>Essai gratuit</span>
+      <b><span>|</span></b>
+      <span>Sans engagement</span>
+    </div>
+  </div>
+  <!-- Logos -->
+  <div class="logos">
+    <ul class="logos-list">
+      <li><%= svg'companies/seatgeek' %></li>
+      <li><%= svg'companies/marine_layer' %></li>
+      <li><%= svg'companies/adoreme' %></li>
+      <li><%= svg'companies/birchbox' %></li>
+      <li><%= svg'companies/capsule' %></li>
+    </ul>
+  </div>
+</section>
 
-<h1>
-  Aircall webdev test
-</h1>
+<!-- Content center -->
+<section class="content-center">
+  <div class="wrap">
+    <div class="text">
+      <h3><span>Simple</span> setup</h3>
+      <p>Add a number, create a team, and get to work. 💪 You can build the phone system you need now without waiting on the IT department.</p>
+    </div>
+    <div class="img">
+      <%= image_tag'illustrations/without-constraints.png', alt: "Without constraints", width: 800 %>
+    </div>
+  </div>
+  <div class="wrap reverse">
+    <div class="img">
+      <%= image_tag'illustrations/integrations.png', alt: "Integrate easily", width: 650 %>
+    </div>
+    <div class="text">
+      <h3><span>Complete</span> conversations</h3>
+      <p>Integrate your phone system with CRMs, helpdesks, and any other tool that contains the context you need to deliver personalized service. 🔧</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="text">
+      <h3><span>Advanced</span> analytics</h3>
+      <p>Dig deeper into employee productivity and customer satisfaction rates 📊 to make sure your operations always measure up to expectations.</p>
+    </div>
+    <div class="img">
+      <%= image_tag'illustrations/track-everything.png', alt: "Track everything", width: 800 %>
+    </div>
+  </div>
+</section>
 
-<h3>Code you page here</h3>
+<!-- Content bottom -->
+<section class="content-bottom">
+  <div class="testimonies">
+    <h2>What <span>our customers are saying</span> about us</h2>
+    <div class="card">
+      <div class="card-video">
+        <%= video 'seatgeek' %>
+      </div>
+      <div class="card-quote">
+        <%= svg'icons/quote' %>
+        <h6>Aircall allows us to provide a seamless interaction with our customers.</h6>
+        <p>Joe Gilgoff, Director of CX</p>
+      </div>
+      <div class="card-logo">
+        <%= svg'companies/seatgeek' %>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-video">
+        <%= video 'adoreme' %>
+      </div>
+      <div class="card-quote">
+        <%= svg'icons/quote' %>
+        <h6>Aircall’s ability to integrate with new ecosystems has made our life easy.</h6>
+        <p>Nicolas Capuono, VP Customer Relationships</p>
+      </div>
+      <div class="card-logo">
+        <%= svg'companies/adoreme' %>
+      </div>
+    </div>
+  </div>
+</section>
