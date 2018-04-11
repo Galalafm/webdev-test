@@ -4,16 +4,23 @@
       <span><%= svg'logos/aircall-logo' %></span>
       <ul class="list">
         <li><%= svg'logos/aircall-logotype' %></li>
-        <li>Solutions</li>
-        <li>Product</li>
-        <li>Integrations</li>
-        <li>Pricing</li>
-        <li>Demo</li>
-        <li>Resources</li>
+        <li><%= t('menu1') %></li>
+        <li><%= t('menu2') %></li>
+        <li><%= t('menu3') %></li>
+        <li><%= t('menu4') %></li>
+        <li><%= t('menu5') %></li>
+        <li><%= t('menu6') %></li>
       </ul>
     </div>
     <div class="content-right">
-
+      <div class="languages">
+        <% link_to '/' do %>
+          <%= svg'icons/us' %>
+        <% end %>
+        <% link_to '/fr' do %>
+          <%= svg'icons/fr' %>
+        <% end %>
+      </div>
     </div>
   </div>
 </nav>

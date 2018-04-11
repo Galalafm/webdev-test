@@ -90,6 +90,23 @@
         }
       }
     }
+    &-right {
+      .languages {
+        width: 100px;
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        width: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        svg {
+          width: 30px;
+        }
+      }
+    }
   }
 }
 

@@ -15,21 +15,21 @@
   </div>
   <!-- Headline -->
   <div class="headline">
-    <h1>The phone system for effortless eCommerce</h1>
-    <h2>Turn curious shoppers into lifelong customers with </br> a five-star service experience</h2>
+    <h1><%= t('title') %></h1>
+    <h2><%= t('subtitle') %></h2>
     <div class="img">
       <%= svg'illustrations/ecommerce_illu' %>
     </div>
   </div>
   <!-- CTA -->
   <div class="cta">
-    <a class="button" href="#">Try aircall for free</a>
+    <a class="button" href="#"><%= t('cta') %></a>
     <div class="infos">
-      <span>Mise en place en 3 min</span>
+      <span><%= t('info1') %></span>
       <b><span>|</span></b>
-      <span>Essai gratuit</span>
+      <span><%= t('info2') %></span>
       <b><span>|</span></b>
-      <span>Sans engagement</span>
+      <span><%= t('info3') %></span>
     </div>
   </div>
   <!-- Logos -->
@@ -48,8 +48,8 @@
 <section class="content-center">
   <div class="wrap">
     <div class="text">
-      <h3><span>Simple</span> setup</h3>
-      <p>Add a number, create a team, and get to work. 💪 You can build the phone system you need now without waiting on the IT department.</p>
+      <h3><%= t('wrap1_title') %></h3>
+      <p><%= t('wrap1_text') %></p>
     </div>
     <div class="img">
       <%= image_tag'illustrations/without-constraints.png', alt: "Without constraints", width: 800 %>
@@ -60,14 +60,14 @@
       <%= image_tag'illustrations/integrations.png', alt: "Integrate easily", width: 650 %>
     </div>
     <div class="text">
-      <h3><span>Complete</span> conversations</h3>
-      <p>Integrate your phone system with CRMs, helpdesks, and any other tool that contains the context you need to deliver personalized service. 🔧</p>
+      <h3><%= t('wrap2_title') %></h3>
+      <p><%= t('wrap2_text') %></p>
     </div>
   </div>
   <div class="wrap">
     <div class="text">
-      <h3><span>Advanced</span> analytics</h3>
-      <p>Dig deeper into employee productivity and customer satisfaction rates 📊 to make sure your operations always measure up to expectations.</p>
+      <h3><%= t('wrap3_title') %></h3>
+      <p><%= t('wrap3_text') %></p>
     </div>
     <div class="img">
       <%= image_tag'illustrations/track-everything.png', alt: "Track everything", width: 800 %>
@@ -78,15 +78,15 @@
 <!-- Content bottom -->
 <section class="content-bottom">
   <div class="testimonies">
-    <h2>What <span>our customers are saying</span> about us</h2>
+    <h2><%= t('testimonies_title') %></h2>
     <div class="card">
       <div class="card-video">
         <%= video 'seatgeek' %>
       </div>
       <div class="card-quote">
         <%= svg'icons/quote' %>
-        <h6>Aircall allows us to provide a seamless interaction with our customers.</h6>
-        <p>Joe Gilgoff, Director of CX</p>
+        <h6><%= t('quote_seatgeek') %></h6>
+        <p><%= t('speaker_seatgeek') %></p>
       </div>
       <div class="card-logo">
         <%= svg'companies/seatgeek' %>
@@ -98,12 +98,23 @@
       </div>
       <div class="card-quote">
         <%= svg'icons/quote' %>
-        <h6>Aircall’s ability to integrate with new ecosystems has made our life easy.</h6>
-        <p>Nicolas Capuono, VP Customer Relationships</p>
+        <h6><%= t('quote_adoreme') %></h6>
+        <p><%= t('quote_adoreme') %></p>
       </div>
       <div class="card-logo">
         <%= svg'companies/adoreme' %>
       </div>
+    </div>
+  </div>
+  <!-- CTA -->
+  <div class="cta">
+    <a class="button" href="#"><%= t('cta') %></a>
+    <div class="infos">
+      <span><%= t('info1') %></span>
+      <b><span>|</span></b>
+      <span><%= t('info2') %></span>
+      <b><span>|</span></b>
+      <span><%= t('info3') %></span>
     </div>
   </div>
 </section>
