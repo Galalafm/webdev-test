@@ -17,6 +17,8 @@ activate :i18n, :langs => [:en, :fr], :mount_at_root => :en
 
 set :relative_links, true
 
+activate :relative_assets
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

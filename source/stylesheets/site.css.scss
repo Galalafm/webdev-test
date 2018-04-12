@@ -14,6 +14,7 @@ body {
 // *** Content top ***
 
 .content-top::before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#F4FCFF), to(#f9fdff));
   background: linear-gradient(to top, #F4FCFF, #f9fdff);
   display: block;
   position: absolute;
@@ -22,8 +23,10 @@ body {
   left: 0;
   height: 650px;
   content: '';
-  transform: skewY(-2deg);
-  box-shadow: 0 -200px 0 #f9fdff;
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+  -webkit-box-shadow: 0 -200px 0 #f9fdff;
+          box-shadow: 0 -200px 0 #f9fdff;
   z-index: -99;
 }
 
@@ -39,20 +42,29 @@ body {
   overflow: hidden;
   padding: 0 30px;
   background: white;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 10px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
+          box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
   .tree {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     top: 1px;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 60px;
     margin-right: 100px;
     padding: 0;
     p {
-      font-family: "Avenir";
+      font-family: "Avenir", Helvetica;
       position: relative;
       cursor: pointer;
       font-weight: 300;
@@ -91,17 +103,23 @@ body {
   }
   .help {
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 0;
     left: auto;
     right: 0;
     bottom: 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 30px;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     p {
-      font-family: "Avenir";
+      font-family: "Avenir", Helvetica;
       position: relative;
       font-weight: 600;
       color: $lighterGrey;
@@ -117,20 +135,22 @@ body {
   h1 {
     padding:0;
     margin:0;
-    font-family: "Avenir";
+    font-family: "Avenir", Helvetica;
     font-weight: 300;
     color: $darkerBlack;
     font-size: 40px;
     line-height: 40px;
   }
   h2 {
-    font-family: "Avenir";
+    font-family: "Avenir", Helvetica;
     font-weight: 300;
     color: $lighterBlack;
     font-size: 20px;
     line-height: 30px;
   }
   .img {
+    width: 500px;
+    height: 480px;
     margin: auto;
     padding: 0;
     outline: 0;
@@ -151,6 +171,7 @@ body {
     left: 0;
     height: 1px;
     margin: auto;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(0,0,0,0.5)), color-stop(20%, transparent));
     background-image: linear-gradient(to right, rgba(0,0,0,0.5) 20%, transparent 20%);
     background-repeat: repeat-x;
     background-position: top;
@@ -161,6 +182,7 @@ body {
   }
   &::after {
     height: 3px;
+    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(40%, rgba(255,255,255,0)), color-stop(60%, rgba(255,255,255,0)), to(#fff));
     background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, #fff 100%);
     background-size: 100% auto;
     z-index: 1;
@@ -171,7 +193,7 @@ body {
     span {
       font-size: 11px;
       color: $lighterBlack;
-      font-family: "Avenir";
+      font-family: "Avenir", Helvetica;
       font-weight: 500;
     }
   }
@@ -180,13 +202,26 @@ body {
 .logos {
   margin: 50px auto;
   &-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     li {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       padding: 40px;
     }
   }
@@ -197,6 +232,7 @@ body {
 .content-center {
   margin-top: -40px;
   &::before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#F4FCFF), to(#f9fdff));
     background: linear-gradient(to top, #F4FCFF, #f9fdff);
     display: block;
     position: absolute;
@@ -204,10 +240,12 @@ body {
     left: 0;
     height: 750px;
     content: '';
-    transform: skewY(+2.5deg);
+    -webkit-transform: skewY(+2.5deg);
+            transform: skewY(+2.5deg);
     z-index: -99;
   }
   &::after {
+    background: -webkit-gradient(linear, left top, right top, from(#F4FCFF), to(rgba(203, 238, 255, 0.5)));
     background: linear-gradient(to right, #F4FCFF, rgba(203, 238, 255, 0.5));
     display: block;
     position: absolute;
@@ -215,28 +253,38 @@ body {
     left: 0;
     height: 750px;
     content: '';
-    transform: skewY(-2.5deg) translate(0, -2310px);
+    -webkit-transform: skewY(-2.5deg) translate(0, -2310px);
+            transform: skewY(-2.5deg) translate(0, -2310px);
     z-index: -199;
   }
 }
 
 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: auto;
   max-width: 1440px;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   padding: 100px 20px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   .text {
     position: relative;;
-    width: 27%;
+    width: 390px;
     margin: 0 5%;
     h3 {
       padding:0;
       margin:0;
-      font-family: "Avenir";
+      font-family: "Avenir", Helvetica;
       font-weight: 300;
       color: $darkerBlack;
       font-size: 40px;
@@ -246,7 +294,7 @@ body {
       }
     }
     p {
-      font-family: "Avenir";
+      font-family: "Avenir", Helvetica;
       font-weight: 500;
       color: $lighterGrey;
       letter-spacing: 0.07px;
@@ -257,10 +305,9 @@ body {
 }
 
 .reverse {
-  padding: 100px 150px;
+  padding: 100px 100px;
   .text {
-    transform: translate(-50px, 0);
-    width: 35%;
+    width: 490px;
   }
 }
 
@@ -269,6 +316,7 @@ body {
 .content-bottom {
   margin-top: -250px;
   &::before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#F4FCFF), to(#f9fdff));
     background: linear-gradient(to top, #F4FCFF, #f9fdff);
     display: block;
     position: absolute;
@@ -276,10 +324,12 @@ body {
     left: 0;
     height: 850px;
     content: '';
-    transform: skewY(-2.5deg);
+    -webkit-transform: skewY(-2.5deg);
+            transform: skewY(-2.5deg);
     z-index: -99;
   }
   &::after {
+    background: -webkit-gradient(linear, left top, right top, from(#F4FCFF), to(rgba(203, 238, 255, 0.5)));
     background: linear-gradient(to right, #F4FCFF, rgba(203, 238, 255, 0.5));
     display: block;
     position: absolute;
@@ -287,7 +337,8 @@ body {
     left: 0;
     height: 850px;
     content: '';
-    transform: skewY(+2.5deg) translate(0, -1200px);
+    -webkit-transform: skewY(+2.5deg) translate(0, -1200px);
+            transform: skewY(+2.5deg) translate(0, -1200px);
     z-index: -199;
   }
 }
@@ -299,7 +350,7 @@ body {
   h2 {
     padding:0;
     margin:0;
-    font-family: "Avenir";
+    font-family: "Avenir", Helvetica;
     font-weight: 300;
     color: $darkerBlack;
     font-size: 35px;
@@ -309,10 +360,16 @@ body {
     }
   }
   .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    align-items: baseline;
-    justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 1000px;
     min-height: 260px;
     margin: 50px auto 100px;
@@ -320,11 +377,13 @@ body {
     border: 1px solid rgba(186,186,186,0.3);
     border-radius: 20px;
     background-color: white;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     &-video {
       margin: auto;
       width: 600px;
-      box-shadow: 0 4px 40px 0 rgba(0,0,0,0.03);
+      -webkit-box-shadow: 0 4px 40px 0 rgba(0,0,0,0.03);
+              box-shadow: 0 4px 40px 0 rgba(0,0,0,0.03);
     }
     &-quote {
       margin-left: 80px;
@@ -334,14 +393,14 @@ body {
       h6 {
         margin: -23px 0 0 0;
         font-size: 20px;
-        font-family: "Avenir";
+        font-family: "Avenir", Helvetica;
         color: $lighterGrey;
         font-weight: 500;
         padding: 0;
       }
       p {
         font-size: 15px;
-        font-family: "Avenir";
+        font-family: "Avenir", Helvetica;
         color: $lighterGrey;
         font-weight: 300;
       }
@@ -352,21 +411,30 @@ body {
       }
     }
     &-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       position: relative;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       width: 300px;
       height: 80px;
       margin-right: -70px;
       border-radius: 10px;
       background: white;
-      box-shadow: 0 4px 0 0 rgba(0,0,0,0.03), 0 0 0 1px rgba(0,0,0,0.08);
+      -webkit-box-shadow: 0 4px 0 0 rgba(0,0,0,0.03), 0 0 0 1px rgba(0,0,0,0.08);
+              box-shadow: 0 4px 0 0 rgba(0,0,0,0.03), 0 0 0 1px rgba(0,0,0,0.08);
       content: '';
     }
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 40px 0 rgba(0,0,0,0.1);
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+      -webkit-box-shadow: 0 4px 40px 0 rgba(0,0,0,0.1);
+              box-shadow: 0 4px 40px 0 rgba(0,0,0,0.1);
     }
   }
 }
